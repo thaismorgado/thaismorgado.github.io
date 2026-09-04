@@ -136,7 +136,7 @@
 
   .photo-wrap{ display:flex; justify-content:center; }
 
-  .photo-frame{ position:relative; width:320px; height:320px; }
+  .photo-frame{ position:relative; width:320px; height:400px; }
 
   .photo-frame .glow{
     position:absolute; inset:-16px; z-index:-1;
@@ -149,7 +149,7 @@
     background:var(--profile-bg); box-shadow:var(--shadow-card);
   }
 
-  .photo-frame img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .photo-frame img{ width:100%; height:100%; object-fit:cover; object-position:center top; display:block; }
 
   /* ---------- SPECIALTIES ---------- */
   .cards-grid{ display:grid; grid-template-columns:1fr; gap:28px; }
@@ -268,5 +268,5 @@
     .about .grid{ grid-template-columns:0.9fr 1.1fr; }
     .cards-grid{ grid-template-columns:repeat(3,1fr); }
     .contact-grid{ grid-template-columns:repeat(3,1fr); }
-    .photo-frame{ width:380px; height:380px; }
+    .photo-frame{ width:380px; height:475px; }
   }
